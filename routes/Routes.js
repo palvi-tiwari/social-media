@@ -10,6 +10,6 @@ Router.get("/", (req, res) => {
 });
 
 Router.post("/signup", SignUp);
-Router.post("/all-user", AllUser);
+Router.get("/all-user", AllUser);
 
 module.exports = Router;
