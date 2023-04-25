@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 module.exports = async (req, res) => {
   // console.log(req.query, "aaaaaaaaaaa");
   const allUserDetails = await signUp.find({});
+  console.log(allUserDetails, "allUserDetails");
   // const page = Number(req.query.page) || 1;
   // const limit = Number(req.query.limit) || 2;
   // var skipData = (page - 1) * limit;
