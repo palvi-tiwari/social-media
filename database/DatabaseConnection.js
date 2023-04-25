@@ -4,6 +4,8 @@ mongoose
   .connect("mongodb://localhost:27017/social-media-app", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
+    dbName: "social-media-app",
   })
   .then(() => {
     console.log("connection successfully.....");
