@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 mongoose
   //Server connection URL
-  .connect("mongodb://localhost:27017/social-media-app", {
+  .connect("mongodb://localhost:27017", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     dbName: "social-media-app",
@@ -10,5 +10,5 @@ mongoose
     console.log("connection successfully.....");
   })
   .catch((err) => {
-    console.log("connection Failed.....", err);
+    console.log("Oops connection Failed.....", err);
   });
