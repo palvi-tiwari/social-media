@@ -1,5 +1,7 @@
 const AllUser = require("../components/AllUser");
 const SignUp = require("../components/SignUp");
+const login = require("../components/login");
+const VerifyToken = require("./VerifyToken");
 
 const Router = require("express").Router();
 
@@ -10,6 +12,7 @@ Router.get("/", (req, res) => {
 });
 
 Router.post("/signup", SignUp);
-Router.get("/all-user", AllUser);
+Router.post("/login", login);
+Router.get("/all-user", VerifyToken, AllUser);
 
 module.exports = Router;

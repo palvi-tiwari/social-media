@@ -24,6 +24,7 @@ module.exports = async (req, res) => {
         expiresIn: "24h",
       }
     );
+
     return res.status(200).json({
       success: true,
       message: "signup",
